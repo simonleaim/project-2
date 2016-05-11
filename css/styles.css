@@ -1,0 +1,417 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #81888D;
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+a,
+a:visited,
+.item-title,
+.footer-nav a{
+    text-decoration: none;
+    color: #93b1c6;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+#name a {
+    color: #ffffff;
+    text-shadow: 
+        0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
+}
+
+#intro,
+.contact-text,
+.phone,
+.phone a,
+.email,
+.email a,
+.footer-name{
+color: #f5f5f5;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+#main-nav a{
+    display: block;
+}
+
+ul#main-nav {
+    padding: 0;
+    margin:0;
+    margin-bottom: 4em;
+}
+
+#main-nav li {
+    background-color: #f5f5f5;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0.4em 0;
+    padding: 0.6em 0;
+    letter-spacing: 0.04em;
+}
+
+/* ---- Layout Containers ---- */
+
+.wrapper {
+    background-color: #93b1c6;
+}
+
+.start,
+.contact,
+.footer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio,
+.skills {
+    background-color: #f5f5f5;
+    padding: 0 5%;
+    padding-bottom: 1em;
+}
+
+section {
+    margin: 1.8em 0;
+}
+
+.contact {
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+/* ---- Page Elements ---- */
+
+#name {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+    margin: 0;
+    padding: 1em 0;
+    letter-spacing: 0.04em;
+}
+
+
+.profile-picture {
+    width: 60%;
+    margin: 1em auto;  
+    box-shadow: 0 15px 20px -12px rgba(0, 0, 0, .4);
+    border-radius: 20px 10px;
+}
+
+#intro {
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.4em;
+    letter-spacing: 0.015em;
+    margin-top: 0;
+}
+.title {
+    color: #ff7148;
+    padding-top: 1.5em;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}/*Affects portfolio and contact title*/
+
+.item-title {
+    text-transform: capitalize;
+    margin-top: 0.7em;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.item-content {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+    margin-top: .5em;
+    font-weight: 400;
+}
+
+/*Skills Styling*/
+.skills {
+    margin-top: 2em;
+}
+
+#skill-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 1em;
+    margin: 0.2em .2em;
+    font-size: 1.1em;
+    border: 2px solid lightblue;
+    width: 40%;
+}
+#skill-list{
+    display: block;
+    padding: 0;
+    margin: 2em 0;
+    
+}
+/*Contact Styling*/
+.contact .title {
+    color: #ec583a; 
+    padding-top: 1em;
+}
+
+.contact-text {
+    margin: 1em 0;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    letter-spacing: 0.015em;
+}
+
+.contact a{
+    font-weight: 700;
+    margin-left: 0.9em;
+    text-decoration: underline;
+}
+
+.phone,
+.email {
+    font-size: 1.1em;
+    margin: 0.7em;
+    
+}
+
+/*Footer Styling*/
+.footer {
+   border-top: solid 2px #f5f5f5;
+}
+
+.footer-name {
+    font-family: 'Fredoka One', cursive;
+    float: left;
+    letter-spacing: 0.06em;
+}
+
+.footer-nav {
+    float:right;
+    text-transform: uppercase; 
+}
+
+.footer-nav a{
+    background-color:#c7d0d5;
+    padding: .2em;
+    font-weight: 400;
+}
+.expanded-nav {
+    display: none;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+ /*Intro/Banner/Nav*/
+    
+    #name {
+        font-size: 4em;
+        padding: .5em;
+    }
+    
+   #main-nav li {
+        display: inline-block;
+        margin: 0 .3em;
+        font-size: 1.1em;
+        padding: .3em 2em;
+        width: 20%;
+    }
+    
+    
+    .profile-picture {
+        width: 40%;
+        float: right;
+        margin-top: 0;
+    } 
+    
+    #intro {
+        width: 60%;
+        float:left;
+        text-align: left;
+        padding-right: 1em;
+        padding-left: .5em;
+        
+    }
+/*Content*/
+    
+    .title {
+        margin: 0.3em 0;
+        font-size: 1.2em;
+    }
+    section {
+        width: 50%;
+        float: left;
+        padding: 0.5em;
+        margin-top: .5em;
+        margin-bottom: 0;
+    }
+    
+    .portfolio section:nth-child(2n) {
+        clear: left;
+    }
+    
+/*Contact*/
+    .contact {
+        width: 80%;    
+    }
+    .contact p {
+        font-size: 1.2em;
+    }
+    .contact .title {
+        padding-top: 1.4em;
+    }
+    
+    .phone {
+        margin-top: 2em;
+    }
+/*Footer*/
+    .footer-name{
+        font-size: 1.2em;
+        padding: 1em 0;
+    }
+    
+    .back-top {
+        display: none;
+    }
+    
+    .expanded-nav {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .expanded-nav li{
+        display: inline-block;
+        padding-top: 1.3em;
+        text-transform: uppercase;
+    }
+    
+    .expanded-nav a {
+        font-size: 1.1em;
+        margin: 0em 0.2em;
+        display: block;
+    }
+    
+    h4 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #skill-list li{
+        width: 20%;
+    }
+    
+    #skill-list {
+        margin: 1em;
+    }
+    
+}
+@media (min-width: 1024px) {
+/*Intro/Banner/Nav*/ 
+    
+/*Start of Main-Header*/
+    .main-header {
+        margin-bottom: 2em;
+        padding-top: 1.5em;
+    }
+    
+    #name {
+        font-size: 3em;
+        float: left;
+        padding: 0;
+    }
+    
+    #main-nav{
+        float: right;
+    }
+    
+    ul#main-nav {
+        margin-bottom:0;
+         margin-top: 1em;
+    }
+    
+    #main-nav li {
+        width: 7em;
+        padding: 0;
+        margin-left: .1em;
+    }
+    
+    #main-nav li a{
+        display: block; 
+        padding: 0.3em;
+    }
+    
+    /*End of Main-Header*/
+    /*Start of Intro and Profile Pic*/
+    .start {
+        margin-bottom: 1em;
+    }
+    
+    
+/*Content*/
+    section {
+        width: 33.3%;
+        float: left;        
+    }
+    .portfolio,
+    .skills{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+    
+    .portfolio section:nth-child(2n) {
+        clear: none;
+    }
+    .portfolio section:nth-child(3n+2) {
+        clear: left;
+    }
+    
+
+    
+/*Contact*/
+ .contact-text {
+        width: 80%;
+        margin: 1em auto;
+    }
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
